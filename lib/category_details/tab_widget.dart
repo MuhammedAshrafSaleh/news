@@ -3,6 +3,7 @@ import 'package:news_app/category_details/news_widget.dart';
 import 'package:news_app/category_details/tab_item_widget.dart';
 
 import '../models/source_model.dart';
+import 'news_item.dart';
 
 // ignore: must_be_immutable
 class TabWidget extends StatefulWidget {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/apis/api_manager.dart';
+import 'package:news_app/category_details/news_item.dart';
 import 'package:news_app/models/news_response_model.dart';
 import 'package:news_app/theme/mytheme.dart';
 
@@ -68,7 +69,7 @@ class _NewsWidgetState extends State<NewsWidget> {
                   itemCount: news.length,
                   // scrollDirection: Axis.vertical,
                   itemBuilder: (context, index) {
-                    return Text(news[index].author ?? 'ss');
+                    return NewsItem(news: news[index]);
                   });
             }
           }
