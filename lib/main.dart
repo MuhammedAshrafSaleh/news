@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/category_details/categegory_details_screen.dart';
 import 'package:news_app/home/home_screen.dart';
+import 'package:news_app/upload_image/upload_image_screen.dart';
 
 import 'theme/mytheme.dart';
 
@@ -18,9 +19,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: CategoryDetailsScreen.routeName,
+      initialRoute: UploadImageScreen.routeName,
       routes: {
         HomeScreen.routeName: (context) => const HomeScreen(),
+        UploadImageScreen.routeName: (context) =>  UploadImageScreen(),
         CategoryDetailsScreen.routeName: (context) =>
             const CategoryDetailsScreen(),
       },
